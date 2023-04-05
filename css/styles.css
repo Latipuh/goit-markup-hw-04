@@ -1,0 +1,81 @@
+    /*цвет лого и кнопки #4D5AE5 */
+    /* цвет шрифта хедера  #2E2F42 */
+    /* цвет адреса в хедере #434455 */
+    /*цвет активного наведения  шрифта #404BBF */
+
+    /* цвет заголовка h1  index #FFFFFF */
+    /* цвет заголовка h2 index  #2E2F42  */
+    /* цвет кновки index    #4D5AE5 */
+    /* цвет текста index  #434455  */
+    
+    /* цвет текста футера    #F4F4FD */
+
+        /* цвет заголовка портфлио #2E2F42 */
+        /*цвет спокойной кнопки на странице портфолио #F4F4FD */
+        /* цвет спокойной надписи кнопки  на странице портфолио #4D5AE5 */
+        /* цвет активной надписи кнопки  на странице портфоли #FFFFFF */
+        /* цвет активной кнопки на странице портфолио #404BBF */
+        /* цвет основного текста портфлио #434455 */
+/*переменные цвета*/
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    --button-color: #404BBF;
+    --primary-white-color: #ffffff;
+    ---second-color: #F4F4FD;
+
+    
+}
+/*основной стиль текста*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  /* identical to box height, or 150% */
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color)
+}
+.list {
+    list-style:none;    
+}
+/* логотип*/
+.logo {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17px;
+    /* identical to box height, or 117% */
+    display: flex;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    text-decoration: none
+}
+
+.accent {
+    color: var(--button-color)
+}
+
+/* хедер*/
+.site-nav .link{
+    color: inherit;
+   font-weight: 500;
+    text-decoration: none;
+  }
+.address .link{
+    color: inherit;
+    text-decoration:none;
+    :hover {
+            color: var(--button-color);
+        }
+}
+.pointer { cursor: pointer}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--button-color);
+}
+.address .link:hover,
+.address .link:focus {
+    color: var(--button-color);
