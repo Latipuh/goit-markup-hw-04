@@ -23,9 +23,7 @@
     --accent-color: #4D5AE5; /* IRIS */
     --button-color: #404BBF; /* Ocean */
     --primary-white-color: #ffffff;
-    --second-color: #F4F4FD;
-
-    
+    --second-color: #F4F4FD;    
 }
 /*основной стиль текста*/
 body {
@@ -49,28 +47,37 @@ body {
     display: flex;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--button-color);
+    color: var(--accent-color);
     text-decoration: none
 }
 
 header .accent {
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
 }
 
 /* хедер*/
 .site-nav .link{
     color: inherit;
-   font-weight: 500;
+    font-weight: 500;
     text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+        /* identical to box height, or 150% */
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
   }
 .address .link{
-    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
     color: inherit;
+    letter-spacing: 0.02em;
     text-decoration:none;
+    font-style: normal;
     :hover {
             color: var(--button-color);
         }
 }
+/* кнопка */
 .pointer { cursor: pointer}
 
 .site-nav .link:hover,
@@ -81,6 +88,7 @@ header .accent {
 .address .link:focus {
     color: var(--button-color);}
 
+    /* первая секция */
 .hero .hero-tittle{ font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -99,20 +107,22 @@ header .accent {
 h3{ font-weight: 500;
     font-size: 20px;
     line-height: 1.2;}
-.cstrategy-head{
+.strategy-head{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:var(--title-text-color);}
 
 .titles-hidden{
-    visibility:hidden};
+    visibility:hidden;}
 
 .our-team {
-background-color: var(--second-color);
-}
+background-color:var(--second-color)}
+
 footer .accent {
     color: var(--second-color);
 }
+
 footer {
-    color:var(--second-color);
-    background-color:var(--title-text-color)}
+    color: var(--second-color);
+    background-color: var(--title-text-color);
+}
