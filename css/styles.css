@@ -1,11 +1,11 @@
-    /*цвет лого и кнопки #4D5AE5 */
+    /*цвет лого и кнопки IRIS #4D5AE5 */
     /* цвет шрифта хедера  #2E2F42 */
     /* цвет адреса в хедере #434455 */
-    /*цвет активного наведения  шрифта #404BBF */
+    /*цвет активного наведения  шрифта Ocean  #404BBF */
 
     /* цвет заголовка h1  index #FFFFFF */
     /* цвет заголовка h2 index  #2E2F42  */
-    /* цвет кновки index    #4D5AE5 */
+    /* цвет кновки index  IRIS  #4D5AE5 */
     /* цвет текста index  #434455  */
     
     /* цвет текста футера    #F4F4FD */
@@ -14,14 +14,14 @@
         /*цвет спокойной кнопки на странице портфолио #F4F4FD */
         /* цвет спокойной надписи кнопки  на странице портфолио #4D5AE5 */
         /* цвет активной надписи кнопки  на странице портфоли #FFFFFF */
-        /* цвет активной кнопки на странице портфолио #404BBF */
+        /* цвет активной кнопки на странице портфолио Ocean  #404BBF */
         /* цвет основного текста портфлио #434455 */
 /*переменные цвета*/
 :root {
     --primary-text-color: #434455;
     --title-text-color: #2E2F42;
-    --accent-color: #4D5AE5;
-    --button-color: #404BBF;
+    --accent-color: #4D5AE5; /* IRIS */
+    --button-color: #404BBF; /* Ocean */
     --primary-white-color: #ffffff;
     ---second-color: #F4F4FD;
 
@@ -78,4 +78,19 @@ body {
 }
 .address .link:hover,
 .address .link:focus {
-    color: var(--button-color);
+    color: var(--button-color);}
+
+h1{ font-weight: 700;
+    font-size: 56px;
+    line-height: 1,07;
+    text-align: center;}
+
+h2{ font-weight: 700;
+    font-size: 36px;
+    line-height: 1,11;   
+    text-align: center;
+    text-transform: capitalize;}
+
+h3{ font-weight: 500;
+    font-size: 20px;
+    line-height: 1,2;}
