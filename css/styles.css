@@ -23,7 +23,7 @@
     --accent-color: #4D5AE5; /* IRIS */
     --button-color: #404BBF; /* Ocean */
     --primary-white-color: #ffffff;
-    ---second-color: #F4F4FD;
+    --second-color: #F4F4FD;
 
     
 }
@@ -34,7 +34,7 @@ body {
     line-height: 1.5;
   /* identical to box height, or 150% */
     letter-spacing: 0.02em;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
     background-color:var(--primary-white-color)}
 .list {
     list-style:none;    
@@ -86,7 +86,7 @@ header .accent {
     line-height: 1.07;
     text-align: center;
     color:var(--primary-white-color);
-    background-color:var(--title-text-color);
+    background-color: var(--title-text-color);
     letter-spacing: 0.02em}
 
  h2{ font-weight: 700;
@@ -107,7 +107,12 @@ h3{ font-weight: 500;
 .titles-hidden{
     visibility:hidden};
 
-.our-team{
-    background-color:var(---second-color);
-    
+.our-team {
+background-color: var(--second-color);
 }
+footer .accent {
+    color: var(--second-color);
+}
+footer {
+    color:var(--second-color);
+    background-color:var(--title-text-color)}
