@@ -51,8 +51,9 @@ body {
     text-decoration: none
 }
 
-header .accent {
+header {
     color: var(--title-text-color);
+    /* --title-text-color: #2E2F42; */
 }
 
 /* хедер*/
@@ -69,7 +70,7 @@ header .accent {
 .address .link{
     font-size: 16px;
     line-height: 1.5;
-    color: inherit;
+    color: var(--title-text-color)
     letter-spacing: 0.02em;
     text-decoration:none;
     font-style: normal;
@@ -94,9 +95,10 @@ header .accent {
     line-height: 1.07;
     text-align: center;
     color:var(--primary-white-color);
-    background-color: var(--title-text-color);
+   
     letter-spacing: 0.02em}
-
+.hero {background-color: var(--title-text-color);}
+ 
  h2{ font-weight: 700;
     font-size: 36px;
     line-height: 1.11;   
@@ -111,12 +113,13 @@ h3{ font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:var(--title-text-color);}
+    
 
 .titles-hidden{
     visibility:hidden;}
-
-.our-team {
-background-color:var(--second-color)}
+.title-we-do {
+background-color: var(--second-color)
+}
 
 footer .accent {
     color: var(--second-color);
