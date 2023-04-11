@@ -66,10 +66,11 @@ body {
     color: var(--title-text-color);
 }
 
-.address .list {
+.list {
     font-size: 16px;
     line-height: 1.5;
-    color: var(--title-text-color)
+    color: var(--primary-text-color);
+    /* --primary-text-color: #434455; */
     letter-spacing: 0.02em;
     text-decoration:none;
     font-style: normal;
@@ -77,9 +78,12 @@ body {
             color: var(--button-color);
         }
 }
+.address{
+        font-style: normal;
+}
 /* кнопка */
 .pointer {
-        font-family: 'Roboto';
+        font-family:"Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -87,12 +91,12 @@ body {
         color: var(--primary-white-color);
         background-color: var(--accent-color);
     cursor: pointer}
+    .pointer:hover,.pointer:focus {background-color: var(--button-color);}
+    
 
-.site-nav .link:hover, .site-nav .link:focus, .pointer {
+.site-nav .link:hover,.address .link:hover, .site-nav .link :focus, .address .link:focus, {
     color: var(--button-color);
 }
-.address .link:hover, .address .link:focus, .pointer {
-    color: var(--button-color);}
 
     /* первая секция */
 .hero .hero-tittle{ font-weight: 700;
@@ -106,7 +110,7 @@ body {
 /*  --title-text-color: #2E2F42; */
  .hero .text, .strategy .titles-strategy, .our-team .title-we-do{
     letter-spacing: 0.02em;
-
+    color: var(--title-text-color);
  }
  h2{ font-weight: 700;
     font-size: 36px;
@@ -120,16 +124,22 @@ h3{ font-weight: 500;
 
 .titles-hidden{
     visibility:hidden;}  /* 2 секція */
+    /*  --title-text-color: #2E2F42; */
 
 
 /* 4 секція */
 .our-team {
 background-color: var(--second-color)
+
 }
-.our-team .list{
+.our-team .team{
     background-color: var(--primary-white-color);
 }
+/*  --primary-white-color: #ffffff;
+ --second-color: #F4F4FD; */
 
+
+ /* футер */
 .footer .accent {
     color: var(--second-color);
 }
