@@ -65,7 +65,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
-.address{text-decoration: none;}
+.address{font-style: normal}
  .address .link {
      font-size: 16px;
      line-height: 1.5;
