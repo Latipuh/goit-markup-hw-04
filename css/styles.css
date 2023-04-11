@@ -65,12 +65,13 @@ body {
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
-
+.address{text-decoration: none;}
  .address .link {
      font-size: 16px;
      line-height: 1.5;
      color: inherit;
-     color: var(--title-text-color);
+     color: var(--primary-text-color);
+     /* --primary-text-color: #434455; */
       letter-spacing: 0.02em;
      text-decoration: none;
      font-style: normal;
@@ -125,7 +126,9 @@ body {
 
 h3{ font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;}    
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);}    
 
 .titles-hidden{
     visibility:hidden;}  /* 2 секція прихований заголовок*/
