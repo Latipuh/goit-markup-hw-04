@@ -30,9 +30,9 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;  /* identical to box height, or 150% */
-    color: var(--title-text-color);
+    color: var(--primary-text-color); /* --primary-text-color: #434455; */
     letter-spacing: 0.02em;
-    /* --title-text-color: #2E2F42; */
+   
     background-color:var(--primary-white-color)}
 .list {
     list-style:none;    
@@ -66,7 +66,7 @@ body {
     color: var(--title-text-color);
 }
 
-.address {
+.address .list {
     font-size: 16px;
     line-height: 1.5;
     color: var(--title-text-color)
@@ -94,10 +94,14 @@ body {
     line-height: 1.07;
     text-align: center;
     color:var(--primary-white-color);
-    letter-spacing: 0.02em}
+    letter-spacing: 0.02em; 
+}
 .hero {background-color: var(--title-text-color);}
 /*  --title-text-color: #2E2F42; */
- 
+ .hero .text, .strategy .titles-strategy, .our-team .title-we-do{
+    letter-spacing: 0.02em;
+
+ }
  h2{ font-weight: 700;
     font-size: 36px;
     line-height: 1.11;   
@@ -110,8 +114,14 @@ h3{ font-weight: 500;
 
 .titles-hidden{
     visibility:hidden;}  /* 2 секція */
-.our-team .title-we-do {
+
+
+/* 4 секція */
+.our-team {
 background-color: var(--second-color)
+}
+.our-team .list{
+    background-color: var(--primary-white-color);
 }
 
 .footer .accent {
