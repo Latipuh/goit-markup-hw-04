@@ -96,7 +96,7 @@ body {
         /*--button-color: #404BBF;  Ocean */
         /*    --second-color: #F4F4FD; */
 /* кнопка портфоліо*/
-.l .pointer{
+.list .pointer{
     color: var(--accent-color);
     background-color: var(--second-color);
 
