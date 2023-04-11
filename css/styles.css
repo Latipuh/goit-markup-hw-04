@@ -66,7 +66,7 @@ body {
     color: var(--title-text-color);
 }
 
-.list, .address {
+.address .list {
     font-size: 16px;
     line-height: 1.5;
     color: var(--primary-text-color);
@@ -92,21 +92,24 @@ body {
     .pointer:hover,.pointer:focus {background-color: var(--button-color);}
     
 
-.site-nav .link:hover, .site-nav .link :focus {
+.site-nav .link:hover, .site-nav .link:focus {
     color: var(--button-color);
 }
 .address .link:hover,.address .link:focus{
         color: var(--button-color);
 
     /* первая секция */
-.hero .hero-tittle{ font-weight: 700;
+.hero {
+    background-color: var(--title-text-color);
+}
+.hero-tittle{
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     color:var(--primary-white-color);
     letter-spacing: 0.02em; 
 }
-.hero {background-color: var(--title-text-color);}
 /*  --title-text-color: #2E2F42; */
  .hero .text, .strategy .titles-strategy, .title-we-do{
     letter-spacing: 0.02em;
