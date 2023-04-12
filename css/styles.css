@@ -173,15 +173,13 @@ background-color: var(--second-color)
         background-color: var(--button-color);    
     }
 
-}
-
-.titles-hidden .port-tittle{
+.port-tittle{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
         /* identical to box height, or 120% */
     letter-spacing: 0.02em;
-     color: var(--title-text-color)
+     color: var(--title-text-color);
 }
 .port-parag{
         font-weight: 400;
