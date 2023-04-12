@@ -95,7 +95,8 @@ body {
          /*--accent-color: #4D5AE5; IRIS */
         /*--button-color: #404BBF;  Ocean */
         /*    --second-color: #F4F4FD; */
-/* кнопка портфоліо*/
+
+        /* кнопка портфоліо*/
 .list .pointer{
     color: var(--accent-color);
     background-color: var(--second-color);
@@ -162,4 +163,32 @@ background-color: var(--second-color)
 .footer {
     color: var(--second-color);
     background-color: var(--title-text-color);
+}
+/* кнопка портфоліо*/
+.list .pointer {
+    color: var(--accent-color);
+    background-color: var(--second-color);}
+    .list .pointer:hover, .list .pointer:focus {
+        color: var(--primary-white-color);
+        background-color: var(--button-color);    
+    }
+
+}
+
+.port-tittle{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+        /* identical to box height, or 120% */
+    letter-spacing: 0.02em;
+     color: var(--title-text-color)
+}
+.port-parag{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        /* identical to box height, or 150% */
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color)
+        /* --primary-text-color: #434455; */
 }
