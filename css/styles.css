@@ -34,8 +34,15 @@ body {
     letter-spacing: 0.02em;
    
     background-color:var(--primary-white-color)}
+    .conteiner{
+        border: 5px solid tomato;
+        width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 .list {
-    list-style:none;    
+    list-style:none;
+    margin: 0;    
 }
 .link{text-decoration: none;}
 /* логотип*/
@@ -62,9 +69,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-   
-    
+    letter-spacing: 0.02em;    
 }
 .address{
     font-style: normal}
@@ -84,6 +89,7 @@ body {
 
 /* кнопка */
 .pointer {
+    display: inline-block;
         font-family:"Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -91,7 +97,10 @@ body {
         letter-spacing: 0.04em;
         color: var(--primary-white-color);
         background-color: var(--accent-color);
-    cursor: pointer}
+    cursor: pointer;
+border-radius: 4px;
+padding: 16px 32px;
+min-width: 169px ;}
     .pointer:hover,.pointer:focus {
         background-color: var(--button-color);}
          /*--accent-color: #4D5AE5; IRIS */
@@ -114,6 +123,7 @@ body {
 
  .hero   {
     background-color: var(--title-text-color);
+    text-align: center;
 }
 .hero-tittle{
     font-weight: 700;
@@ -121,7 +131,9 @@ body {
     line-height: 1.07;
     text-align: center;
     color:var(--primary-white-color);
-    letter-spacing: 0.02em; 
+    letter-spacing: 0.02em;
+    margin-top: 0px; 
+    margin-bottom: 48px;
 }
 /*  --title-text-color: #2E2F42; */
  .hero .text, 
@@ -130,18 +142,38 @@ body {
     letter-spacing: 0.02em;
     color: var(--title-text-color);
  }
- .tittle-base{ font-weight: 700;
+p.text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.strategy .conteiner{
+    padding-bottom: 118px;
+
+}
+.strategy .strat-list{
+        display: inline-block;
+}
+ .tittle-base{
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;  
     text-align: center;
-    text-transform: capitalize;}
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 72px;}
 
-.tittle-reg{ font-weight: 500;
+.tittle-reg{
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
-    color: var(--title-text-color);}    
+    color: var(--title-text-color);
+    margin-top: 0px;
+    margin-bottom: 8px;}   
+
+    .strategy .tittle-reg{
+        text-align: left;} 
 
 .titles-hidden{
     font-weight: 500;
@@ -149,17 +181,37 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    visibility:hidden;}  /* 2 секція прихований заголовок*/
+    visibility:hidden;
+    display: none}  /* 2 секція прихований заголовок*/
     /*  --title-text-color: #2E2F42; */
 
 
+.we-do .conteiner{
+    padding-bottom: 122px;
+}
 /* 4 секція */
 .our-team {
 background-color: var(--second-color)
 
 }
+.we-do .team, .portfolio .port-list, .portfolio .port-btn{
+    display: inline-block;
+}
+.portfolio .team{
+    padding: 0 0 32px;
+}
 .our-team .team{
+    display: inline-block;
     background-color: var(--primary-white-color);
+    padding: 0px 0px 32px;
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+}
+.our-team .conteiner{
+    padding-bottom: 115px;
+}
+.pict{
+    margin-bottom: 32px;
 }
 /*  --primary-white-color: #ffffff;
  --second-color: #F4F4FD; */
@@ -181,7 +233,8 @@ background-color: var(--second-color)
     .list .pointer:hover, 
     .list .pointer:focus {
         color: var(--primary-white-color);
-        background-color: var(--button-color);    
+        background-color: var(--button-color);
+        display: inline-block;    
     }
 
 .port-tittle{
@@ -191,6 +244,8 @@ background-color: var(--second-color)
         /* identical to box height, or 120% */
     letter-spacing: 0.02em;
      color: var(--title-text-color);
+     margin-top: 0;
+     margin-bottom: ;
 }
 .port-parag{
         font-size: 16px;
