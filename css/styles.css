@@ -194,7 +194,7 @@ p.text{
 background-color: var(--second-color)
 
 }
-.we-do .team, .portfolio .port-list, .portfolio .port-btn{
+.we-do .team, .portfolio .team, .portfolio .port-btn{
     display: inline-block;
 }
 .portfolio .port-btn {
