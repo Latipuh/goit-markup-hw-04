@@ -197,6 +197,9 @@ background-color: var(--second-color)
 .we-do .team, .portfolio .port-list, .portfolio .port-btn{
     display: inline-block;
 }
+.portfolio .port-btn {
+    padding-bottom: 72px;
+}
 .portfolio .team{
     padding: 0 0 32px;
 }
