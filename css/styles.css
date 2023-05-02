@@ -107,8 +107,11 @@ body {
 .address .list{
         display: flex;
 }
-.address .item+ .item{
-    margin-left: 40px;
+.address .item{
+    margin-right: 40px;
+}
+.address .item:last-child{
+    margin-right: 0px;
 }
  .address .link {
     font-weight: 500;
