@@ -69,9 +69,11 @@ body {
 .container-header .container{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid#e7e9fc;
     /* #E7E9FC колір нижньої рамки хедера */
 } 
+.container-header{
+    border-bottom: 1px solid var(--frame)
+}
 .main-nav{
     display: flex;
     align-items: center;
@@ -88,8 +90,10 @@ body {
 }
 .site-nav .item {
     margin-right: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+}
+.site-nav .link{
+        padding-top: 24px;
+        padding-bottom: 24px;
 }
 .site-nav .item:last-child{
     margin-right: 0px;
@@ -155,7 +159,7 @@ border-radius: 4px;
 
 
 }
-.hero .container{
+.hero{
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -259,7 +263,7 @@ p.text{
 
 
 
-.we-do .container{
+.we-do{
     padding-bottom: 120px;
 }
 .we-do .list{
@@ -362,9 +366,7 @@ margin-left: 24px;
         /* --primary-text-color: #434455; */
 }
 
-.portfolio .list{
-margin-bottom: 72px;
-}
+
 .portfolio .port-btn {
     margin-right: 24px;
 }
@@ -379,11 +381,12 @@ margin-bottom: 72px;
 .portfolio .pointer:focus {
     border: 1px solid transparent;
 }
+/* секция portfolio */
 .portfolio .list {
     display: flex;
-    justify-content:center
-
-/* секция portfolio */
+    justify-content: center;
+     margin-bottom: 72px;
+}
 .portfolio .team-list {
     display: flex;
     flex-wrap: wrap;
