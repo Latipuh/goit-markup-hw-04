@@ -35,7 +35,7 @@ body {
    
     background-color:var(--primary-white-color)}
     .conteiner{
-        border: 5px solid tomato;
+        /* border: 5px solid tomato; */
         width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
@@ -43,6 +43,7 @@ body {
 .list {
     list-style:none;
     margin: 0;    
+    padding-left: 0px;
 }
 .link{text-decoration: none;}
 /* логотип*/
@@ -56,23 +57,53 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-color);
+    margin-right: 77px;
 
 }
- 
+.conteiner-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid#E7E9FC;
+    /* #E7E9FC колір нижньої рамки хедера */
+} 
+.main-nav{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
  .accent {
       color: var(--title-text-color)
   }
 
 /* хедер*/
+.site-nav{
+    display: flex;
+}
+.site-nav .item+ .item {
+    margin-left: 40px;
+}
 .site-nav .link{
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;    
+    letter-spacing: 0.02em;  
+
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 }
 .address{
-    font-style: normal}
+    font-style: normal;
+}
+.address .list{
+        display: flex;
+}
+.address .item+ .item{
+    margin-left: 41px;
+}
  .address .link {
     font-weight: 500;
      font-size: 16px;
@@ -82,6 +113,8 @@ body {
      /* --primary-text-color: #434455; */
       letter-spacing: 0.02em;
      font-style: normal;
+
+
  }
  .address .link:hover {
      color: var(--button-color);
@@ -99,8 +132,11 @@ body {
         background-color: var(--accent-color);
     cursor: pointer;
 border-radius: 4px;
+}
+.hero .pointer{
 padding: 16px 32px;
-min-width: 169px ;}
+min-width: 169px;
+}
     .pointer:hover,.pointer:focus {
         background-color: var(--button-color);}
          /*--accent-color: #4D5AE5; IRIS */
@@ -150,8 +186,20 @@ p.text{
     padding-bottom: 118px;
 
 }
+ .strategy-conteiner .list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.strategy .strat-list {
+    margin-right: auto;
+}
+.strategy .strat-list:nth-child(4n){
+    margin-right: 0px;
+}
 .strategy .strat-list{
         display: inline-block;
+  
+        width: 264px;
 }
  .tittle-base{
     font-weight: 700;
@@ -186,23 +234,39 @@ p.text{
     /*  --title-text-color: #2E2F42; */
 
 
+
 .we-do .conteiner{
     padding-bottom: 122px;
 }
+.we-do .link{
+    display: flex;
+    padding: 0px;
+
+}
+
+.we-do .team{
+        display: inline-block;
+}
+.we-do .team+.team {margin-left: 24px;}
+}
+
 /* 4 секція */
 .our-team {
 background-color: var(--second-color)
-
 }
-.we-do .team, .portfolio .team, .portfolio .port-btn{
+.our-team .list{
     display: inline-block;
+    justify-content: center;
 }
+.our-team .team + .team{
+margin-left: 24px;
+}
+/* .we-do .team,
+.portfolio .team,
 .portfolio .port-btn {
-    padding-bottom: 72px;
-}
-.portfolio .team{
-    padding: 0 0 32px;
-}
+    display: block;
+} */
+
 .our-team .team{
     display: inline-block;
     background-color: var(--primary-white-color);
@@ -212,9 +276,6 @@ background-color: var(--second-color)
 }
 .our-team .conteiner{
     padding-bottom: 115px;
-}
-.pict{
-    margin-bottom: 32px;
 }
 /*  --primary-white-color: #ffffff;
  --second-color: #F4F4FD; */
@@ -228,6 +289,9 @@ background-color: var(--second-color)
 .footer {
     color: var(--second-color);
     background-color: var(--title-text-color);
+}
+.footer .footer-text{
+    width: 264px;
 }
 /* кнопка портфоліо*/
 .list .pointer {
@@ -258,3 +322,41 @@ background-color: var(--second-color)
         color: var(--primary-text-color)
         /* --primary-text-color: #434455; */
 }
+.portfolio .team-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-list .team:not(:nth-child(3n)) {
+    margin-right: 24px; 
+}
+.portfolio .port-btn {
+    padding-bottom: 72px;
+}
+.portfolio .pointer {
+    padding: 12px 24px;
+    margin-top: 86px;
+}
+.portfolio .port-btn+.port-btn{
+    margin-left: 24px;
+}
+.portfolio .list {
+    display: flex;
+    justify-content:center
+}
+.portfolio .port-item {
+    padding: 0 0 32px;
+    padding-left: 16px;
+    padding-top: 32px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid#E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC
+    /* #E7E9FC рамка */
+
+}
+.team-list .team:nth-last-child(-n+3){
+    margin-bottom: 120px; 
+}
+/* .portfolio .link {
+    display: inline-block;
+} */
