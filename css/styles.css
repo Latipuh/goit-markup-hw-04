@@ -34,7 +34,7 @@ body {
     letter-spacing: 0.02em;
    
     background-color:var(--primary-white-color)}
-    .conteiner{
+    .container{
         /* border: 5px solid tomato; */
         width: 1158px;
         padding-left: 15px;
@@ -64,7 +64,7 @@ body {
     margin-right: 76px;
 
 }
-.conteiner-header {
+.container-header {
     display: flex;
     align-items: center;
     border-bottom: 1px solid#e7e9fc;
@@ -191,11 +191,11 @@ p.text{
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.strategy .conteiner{
+.strategy .container{
     padding-bottom: 118px;
 
 }
- .strategy-conteiner .list{
+ .strategy-container .list{
     display: flex;
     flex-wrap: wrap;
 }
@@ -244,7 +244,7 @@ p.text{
 
 
 
-.we-do .conteiner{
+.we-do .container{
     padding-bottom: 122px;
 }
 .we-do .link{
@@ -283,7 +283,7 @@ margin-left: 24px;
     border-radius: 0px 0px 4px 4px;
     text-align: center;
 }
-.our-team .conteiner{
+.our-team .container{
     padding-bottom: 115px;
 }
 /*  --primary-white-color: #ffffff;
