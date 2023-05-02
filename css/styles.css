@@ -246,7 +246,8 @@ p.text{
     text-align: center;
     color: var(--title-text-color);
     margin-top: 0px;
-    margin-bottom: 8px;}   
+    margin-bottom: 8px;
+}   
 
     .strategy .tittle-reg{
         text-align: left;} 
@@ -285,15 +286,14 @@ p.text{
 
 /* 4 секція */
 .our-team {
-background-color: var(--second-color)
+background-color: var(--second-color);
+padding-bottom: 115px;
 }
 .our-team .list{
-    display: inline-block;
+    display: flex;
     justify-content: center;
 }
-.our-team .team + .team{
-margin-left: 24px;
-}
+
 /* .we-do .team,
 .portfolio .team,
 .portfolio .port-btn {
@@ -301,19 +301,23 @@ margin-left: 24px;
 } */
 
 .our-team .team{
-    display: inline-block;
+    margin-right: 24px;
+    display: block;
     background-color: var(--primary-white-color);
     padding: 0px 0px 32px;
     border-radius: 0px 0px 4px 4px;
     text-align: center;
+    width: calc((100% - 72px) / 4);
 }
-.our-team .container{
-    padding-bottom: 115px;
+.our-team .team:last-child {
+    margin-right: 0px;
 }
 /*  --primary-white-color: #ffffff;
  --second-color: #F4F4FD; */
 
-
+.our-team .team-info{
+    padding: 32px 16px;
+}
  /* футер */
 .footer .accent {
     color: var(--second-color);
