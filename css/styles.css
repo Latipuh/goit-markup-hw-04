@@ -45,6 +45,7 @@ body {
     }
     img {
         display: block;
+        width: 100%;
     }
 .list {
     list-style:none;
@@ -77,7 +78,7 @@ body {
 .main-nav{
     display: flex;
     align-items: center;
-    margin: auto;
+    margin-right: auto;
 }
 
  .accent {
@@ -226,7 +227,6 @@ p.text{
     margin-right: 0px;
 }
 .strategy .strat-list{
-        display: inline-block;
         width: calc((100% - 72px) / 4);
 }
  .tittle-base{
@@ -302,7 +302,6 @@ padding: 120px 0;
 
 .our-team .team{
     margin-right: 24px;
-    display: block;
     background-color: var(--primary-white-color);
     padding: 0px 0px 32px;
     border-radius: 0px 0px 4px 4px;
@@ -333,9 +332,11 @@ padding: 120px 0;
 .footer .logo{
     display: inline-block;
     margin-bottom: 16px;
+    margin-right: 0px;
 }
 .footer .footer-text{
     width: 264px;
+    margin: 0px;
 }
 
 .portfolio {
@@ -370,7 +371,9 @@ padding: 120px 0;
 .portfolio .list {
     display: flex;
     justify-content: center;
-     margin-bottom: 72px;
+}
+.portfolio .port-list-bottom {
+    margin-bottom: 72px;
 }
 .portfolio .team-list {
     display: flex;
