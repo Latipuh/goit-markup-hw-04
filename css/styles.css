@@ -25,7 +25,9 @@
     --button-color: #404BBF; /* Ocean */
     --primary-white-color: #ffffff;
     --second-color: #F4F4FD;  
-    --frame: #E7E9FC; 
+    --frame: #E7E9FC;
+    --client-logo:#8E8F99;
+    --soc-logo:#F4F4FD;
 }
 /*основной стиль текста*/
 body {
@@ -165,7 +167,8 @@ border-radius: 4px;
     padding-bottom: 188px;
 }
     .pointer:hover,.pointer:focus {
-        background-color: var(--button-color);}
+         background-color: var(--button-color);
+        }
          /*--accent-color: #4D5AE5; IRIS */
         /*--button-color: #404BBF;  Ocean */
         /*    --second-color: #F4F4FD; */
@@ -186,7 +189,18 @@ border-radius: 4px;
 
  .hero   {
     background-color: var(--title-text-color);
+        background-image: linear-gradient(
+            to right,
+             rgba(46, 47, 66, 0.7),
+             rgba(46, 47, 66, 0.7)),
+            url(../images/people-office.jpg);
+    /* background-image: url(../images/people-office.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1440рх;
+
     text-align: center;
+    /* rgba(46, 47, 66, 0.7) */
 }
 .hero-tittle{
     font-weight: 700;
@@ -263,6 +277,24 @@ p.text{
     /*  --title-text-color: #2E2F42; */
 
 
+.strat-list .buttom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+   
+    background-color: #F4F4FD;
+    height: 112px;
+    width: 264px;
+    border-radius: 4px;
+}
+.strat-list .buttom-icon{
+
+    width: 64px;
+    height: 64px;
+    left: 100px;
+    top: 24px;
+}
 
 .we-do{
     padding-bottom: 120px;
@@ -300,13 +332,17 @@ padding: 120px 0;
     display: block;
 } */
 
+
 .our-team .team{
     margin-right: 24px;
     background-color: var(--primary-white-color);
-    padding: 0px 0px 32px;
     border-radius: 0px 0px 4px 4px;
     text-align: center;
     width: calc((100% - 72px) / 4);
+    box-shadow:
+         0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .our-team .team:last-child {
     margin-right: 0px;
@@ -317,6 +353,53 @@ padding: 120px 0;
 .our-team .team-info{
     padding: 32px 16px;
 }
+
+.buttom-soc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    fill: var(--soc-logo);
+}
+.buttom-icon-soc{
+    align-items: center;
+    justify-content: center;
+}
+.our-team .link-soc{
+    margin-top: 8px;
+    margin-right: 24px;
+}
+.our-team .link-soc:last-child{
+    margin-right: 0px;
+}
+
+/* Наші кліенти */
+.our-client{
+    background-color: var(--primary-white-color);
+    padding: 120px 0;
+}
+.our-client-container .list {
+     display: flex;}
+
+.buttom-client{
+    display: flex;
+    margin-right: 24px;
+    align-items: center;
+    justify-content: center;
+    height: 88px;
+    width: 168px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    fill:var(--client-logo);
+}
+.buttom-client:last-child{
+    margin-right: 0px;
+}
+
+
  /* футер */
 .footer .accent {
     color: var(--second-color);
@@ -339,8 +422,23 @@ padding: 120px 0;
     margin: 0px;
 }
 
-.portfolio {
-    padding: 96px 0 120px
+.list-soc{
+display: flex;
+}
+.link-soc{
+    margin-right: 16px;
+}
+.soc-media{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.footer-container{
+    display: flex;
+}
+.logo-company{
+    margin-right: 120px;
 }
 /* кнопка портфоліо*/
 .list .pointer {
@@ -353,12 +451,7 @@ padding: 120px 0;
         display: inline-block;    
     }
 
-.portfolio .port-btn {
-    margin-right: 24px;
-}
-.portfolio .port-btn:last-child {
-    margin-right: 0px;
-}
+
 .portfolio .pointer {
     padding: 12px 24px;
     border: 1px solid var(--frame);
@@ -366,8 +459,29 @@ padding: 120px 0;
 .portfolio .pointer:hover,
 .portfolio .pointer:focus {
     border: 1px solid transparent;
+    box-shadow: 
+    0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 2px 1px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* секция portfolio */
+.portfolio {
+    padding: 96px 0 120px
+}
+.portfolio .port-btn {
+    margin-right: 24px;
+}
+
+.portfolio .port-btn:last-child {
+    margin-right: 0px;
+}
+
+.portfolio .team:hover {
+    box-shadow:
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio .list {
     display: flex;
     justify-content: center;
