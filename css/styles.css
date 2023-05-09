@@ -192,8 +192,8 @@ border-radius: 4px;
 
 }
 
-.hero {
-    max-width: 1440x;
+.hero .container{
+    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
     background-color: var(--title-text-color);
