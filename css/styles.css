@@ -168,6 +168,18 @@ border-radius: 4px;
 .hero{
     padding-top: 188px;
     padding-bottom: 188px;
+        background-color: var(--title-text-color);
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url(../images/people-office.jpg);
+         /* background-image: url(../images/people-office.jpg); */
+         max-width: 1440рх;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+        
+            text-align: center;
+            /* rgba(46, 47, 66, 0.7) */
 }
     .pointer:hover,.pointer:focus {
          background-color: var(--button-color);
@@ -190,21 +202,6 @@ border-radius: 4px;
 }
     /* первая секция */
 
- .hero   {
-    background-color: var(--title-text-color);
-    background-image: linear-gradient(
-             rgba(46, 47, 66, 0.7),
-             rgba(46, 47, 66, 0.7)),
-            url(../images/people-office.jpg);
-    /* background-image: url(../images/people-office.jpg); */
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1440рх;
-    background-size: cover;
-
-    text-align: center;
-    /* rgba(46, 47, 66, 0.7) */
-}
 .hero-tittle{
     font-weight: 700;
     font-size: 56px;
@@ -354,7 +351,7 @@ padding: 120px 0;
  --second-color: #F4F4FD; */
 
 .our-team .team-info{
-    padding: 32px 16px;
+    padding: 32px 0px;
 }
 
 .buttom-soc{
@@ -367,17 +364,20 @@ padding: 120px 0;
     border-radius: 50%;
     fill: var(--soc-logo);
 }
+.buttom-soc:hover, .buttom-soc:focus{
+    background-color: var(--button-color)
+}
 .buttom-icon-soc{
     align-items: center;
     justify-content: center;
 }
 .our-team .link-soc{
     margin-top: 8px;
-    margin-right: 24px;
+    gap: 24px;
 }
-.our-team .link-soc:last-child{
+/* .our-team .link-soc:last-child{
     margin-right: 0px;
-}
+} */
 
 /* Наші кліенти */
 .our-client{
@@ -387,38 +387,67 @@ padding: 120px 0;
 .our-client-container .list {
      display: flex;}
 
-.buttom-client{
-    display: flex;
-    margin-right: 24px;
-    align-items: center;
-    justify-content: center;
+.tittle-our-client {
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 1.1;
+     text-align: center;
+     text-transform: capitalize;
+    color:var(--title-text-color);
+     margin-top: 0px;
+     margin-bottom: 72px;
+         }
+
+.our-client .list-client{
+    
     height: 88px;
     width: 168px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    fill:var(--client-logo);
 }
-.buttom-client:last-child{
-    margin-right: 0px;
+.our-client-container .list{
+    gap: 24px;
 }
-
+.buttom-client{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 88px;
+        width: 168px;
+        border: 1px solid var(--client-logo);
+        border-radius: 4px;
+    fill: var(--client-logo);
+}
+.buttom-client:hover, .buttom-client:focus{
+    fill: var(--button-color);
+    border: 1px solid var(--button-color);
+}
+/* .buttom-client-icon{
+    fill: currentColor;
+} */
 
  /* футер */
-.footer .accent {
-    color: var(--second-color);
-}
+
 
 .footer {
     color: var(--second-color);
     background-color: var(--title-text-color);
-    
+
     padding-top: 100px;
     padding-bottom: 100px;
+}
+.footer-container {
+    display: flex;
+    align-items: baseline;
 }
 .footer .logo{
     display: inline-block;
     margin-bottom: 16px;
     margin-right: 0px;
+}
+.logo-company {
+    margin-right: 120px;
+}
+.footer .accent {
+    color: var(--second-color);
 }
 .footer .footer-text{
     width: 264px;
@@ -432,17 +461,18 @@ display: flex;
     margin-right: 16px;
 }
 .soc-media{
-    font-size: 16px;
     font-weight: 500;
     margin: 0;
     margin-bottom: 16px;
 }
-.footer-container{
-    display: flex;
+.list-soc{
+    gap: 16px;
 }
-.logo-company{
-    margin-right: 120px;
+.footer .buttom-soc:focus, .footer .buttom-soc:hover{
+    background-color: #31d0aa
+    
 }
+
 /* кнопка портфоліо*/
 .list .pointer {
     color: var(--accent-color);
@@ -479,7 +509,7 @@ display: flex;
     margin-right: 0px;
 }
 
-.portfolio .team:hover {
+.portfolio .team:hover, .portfolio .team:focus {
     box-shadow:
         0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -497,6 +527,7 @@ display: flex;
     flex-wrap: wrap;
 }
 .team-list .team {
+    display: block;
     margin-right: 24px;
     margin-bottom: 48px;
     width: calc((100% - 48px)/3);
