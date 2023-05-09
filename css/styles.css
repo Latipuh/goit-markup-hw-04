@@ -192,7 +192,7 @@ border-radius: 4px;
 
 }
 
-.hero .container{
+.hero {
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -205,6 +205,8 @@ border-radius: 4px;
     background-position: center;
     background-size: cover;
 
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     /* rgba(46, 47, 66, 0.7) */
 }
