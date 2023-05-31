@@ -22,8 +22,8 @@
             <a href="./index.html" class="logo link">Web<span class="accent">Studio</span></a>
             
             <ul class="site-nav list">
-                <li class="item">
-                    <a href="./index.html" class="link">Studio</a>
+                <li class="item ">
+                    <a href="./index.html" class="link underlined">Studio</a>
                 </li>
                 <li class="item">
                     <a href="./portfolio.html" class="link">Portfolio</a>
@@ -50,7 +50,19 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-tittle">Effective Solutions for Your Business</h1>
-                <button type="button" class="pointer">Order Service</button>
+                <button type="button" class="pointer" data-modal-open >Order Service</button>
+                <div class="backdrop is-hidden " data-modal> 
+                     <div class="modal">
+                            <button type="button" class="icon-modal-buttom" data-modal-close >
+                                <svg class="icon-modal-close"  width="8" height="8" >
+                                <use href="./images/close.svg#icon-close">
+                                </use> 
+                                </svg>
+                                 </button>
+                     </div>
+            
+                 </div>
+
             </div> 
          </section>
         <!-- 2.Стратегії -->
@@ -428,5 +440,7 @@
         </div>
     
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
